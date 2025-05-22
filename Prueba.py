@@ -42,8 +42,14 @@ print("\n******* REGISTRO DEL CÁLCULO *******")
 for i in range(4):
     total = 0
     for j in range(7):
-        total += sum(consumo_edificios[i][j])
-    promedio = total / 7
+        total += sum(consumo_edificios[i][j])  #Sumamos el consumo de cada turno por dia
+    promedio = total / 7  #Calculamos el promedio semanal
+    # Mostrar resultados
+    print("#"*50)
+    print("********** Calculo de consumo energetico **********")
     print(f"Edificio {i + 1}:")
     print(f" - Consumo total semanal: {total:.2f} kWh")
     print(f" - Promedio diario: {promedio:.2f} kWh\n")
+    print("********** ***************************** **********")
+    print("#"*50)
+    #Fin del programa

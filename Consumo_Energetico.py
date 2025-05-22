@@ -38,7 +38,7 @@ for i in range(4): # Son 4 edificios
 
 # Parte 3
 # Procesar y mostrar los resultados 
-print("\n******* REGISTRO DEL CÁLCULO *******")
+print("\n******* REGISTRO DEL CÁLCULO ******")
 for i in range(4):
     total = 0
     for j in range(7):

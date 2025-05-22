@@ -1,5 +1,5 @@
 """
-Nombre: Andy, D.
+Nombre: Andy D.
 Fecha: 20/05/2025
 Version: 1.0
 Descripcion: Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 

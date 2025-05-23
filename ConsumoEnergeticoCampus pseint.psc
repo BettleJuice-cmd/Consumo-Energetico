@@ -2,9 +2,9 @@
 //Fecha: 23/05/2025
 //Version: 1.0
 //Descripcion: Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 
-universitario a lo largo de una semana. Por cada día se ingresarán los kilovatios consumidos en 
-tres turnos: mañana, tarde y noche. El programa debe calcular el consumo total por edificio y 
-generar el promedio semanal correspondiente.
+//universitario a lo largo de una semana. Por cada día se ingresarán los kilovatios consumidos en 
+//tres turnos: mañana, tarde y noche. El programa debe calcular el consumo total por edificio y 
+//generar el promedio semanal correspondiente.
 
 
 

@@ -1,7 +1,7 @@
-Algoritmo consumoEnergético20
-	// Autores: Manuel Mayorga y Josue Reyes
-	// Versión 1.1 
-	// Programa para registrar el consumo energético de 4 edificios durante una semana
+Algoritmo consumoEnergÃ©tico20
+	// Autores: sahid lopez , andy diaz , joshua donaire
+	// VersiÃ³n 1.1 
+	// Programa para registrar el consumo energÃ©tico de 4 edificios durante una semana
 	
 	Definir edificios, edificio, dia, turno Como Entero
 	Definir consumo, total_edificio, total_general, promedio_semanal Como Real
@@ -9,7 +9,7 @@ Algoritmo consumoEnergético20
 	edificios <- 4
 	total_general <- 0
 	
-	Escribir "Registro de consumo energético (kW) por edificio, día y turno"
+	Escribir "Registro de consumo energÃ©tico (kW) por edificio, dÃ­a y turno"
 	
 	Para edificio <- 1 Hasta edificios Con Paso 1
 		Escribir ""
@@ -18,7 +18,7 @@ Algoritmo consumoEnergético20
 		
 		Para dia <- 1 Hasta 7 Con Paso 1
 			Escribir ""
-			Escribir "Día ", dia
+			Escribir "DÃ­a ", dia
 			
 			Para turno <- 1 Hasta 3 Con Paso 1
 				Escribir "  Consumo en turno ", turno, ": "
@@ -33,7 +33,7 @@ Algoritmo consumoEnergético20
 		
 		Escribir ""
 		Escribir "=> Total consumido en Edificio ", edificio, ": ", total_edificio, " kW"
-		Escribir "=> Promedio diario (semana): ", promedio_semanal, " kW/día"
+		Escribir "=> Promedio diario (semana): ", promedio_semanal, " kW/dÃ­a"
 		
 		total_general <- total_general + total_edificio
 	Fin Para

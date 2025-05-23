@@ -30,9 +30,17 @@ for i in range(4): # Son 4 edificios
        print(f" Dia: {dias_semana[j]}")
        dia = []
        for k in range(3): #Son los tres turnos del dia: Mañana, Tarde y Noche
-            valor = float(input(f"  Consumo en turno de {turnos_dia[k]} (kWh): ")) #Se pide el consumo por cada turno al usuario
+            while True:
+                try:
+                    valor = float(input(f"Consumo en turno de {turnos_dia[k]} (kWh): "))  #Se pide el consumo por cada turno al usuario
+                    if valor < 0:
+                        print("El valor tiene que ser positivo")
+                    else:
+                        break 
+                except ValueError:
+                    print("El valor tiene que ser numerico (Sin Caracteres)")
             dia.append(valor)
-       edificio.append(dia)
+            edificio.append(dia)
     print("*"*50)
     consumo_edificios.append(edificio)
 

@@ -1,7 +1,10 @@
+
+=======
 Algoritmo consumoEnergético20
 	// Autores: sahid lopez , andy diaz , joshua donaire
 	// Versión 1.1 
 	// Programa para registrar el consumo energético de 4 edificios durante una semana
+>>>>>>> 915edad97a33088a82a3cc2b33770336bc6ddbb7
 	
 	Definir edificios, edificio, dia, turno Como Entero
 	Definir consumo, total_edificio, total_general, promedio_semanal Como Real

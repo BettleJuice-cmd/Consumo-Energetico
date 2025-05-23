@@ -1,5 +1,5 @@
 """
-Autor: Andy, D. Joshua, D. Sahid, L.
+Autores: Andy, D. Joshua, D. Sahid, L.
 Fecha: 20/05/2025
 Version: 1.0
 Descripcion: Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 

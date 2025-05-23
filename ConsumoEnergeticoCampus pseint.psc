@@ -1,22 +1,33 @@
+//Autor: Andy, D. Joshua, D. Sahir, L.
+//Fecha: 23/05/2025
+//Version: 1.0
+//Descripcion: Desarrolle un programa que registre el consumo energ√©tico de cuatro edificios del campus 
+//universitario a lo largo de una semana. Por cada d√≠a se ingresar√°n los kilovatios consumidos en 
+//tres turnos: ma√±ana, tarde y noche. El programa debe calcular el consumo total por edificio y 
+//generar el promedio semanal correspondiente.
+
+
+
+
 Algoritmo ConsumoEnergeticoCampus
-    // DefiniciÛn de variables y estructuras
+    // Definici√≥n de variables y estructuras
     Definir dias_semana Como Cadena
     Dimension dias_semana[7]
     dias_semana[0] <- "Lunes"
     dias_semana[1] <- "Martes"
-    dias_semana[2] <- "MiÈrcoles"
+    dias_semana[2] <- "Mi√©rcoles"
     dias_semana[3] <- "Jueves"
     dias_semana[4] <- "Viernes"
-    dias_semana[5] <- "S·bado"
+    dias_semana[5] <- "S√°bado"
     dias_semana[6] <- "Domingo"
     
     Definir turnos_dia Como Cadena
     Dimension turnos_dia[3]
-    turnos_dia[0] <- "MaÒana"
+    turnos_dia[0] <- "Ma√±ana"
     turnos_dia[1] <- "Tarde"
     turnos_dia[2] <- "Noche"
     
-    // Matriz para almacenar los consumos (4 edificios x 7 dÌas x 3 turnos)
+    // Matriz para almacenar los consumos (4 edificios x 7 d√≠as x 3 turnos)
     Definir consumo_edificios Como Real
     Dimension consumo_edificios[4,7,3]
     
@@ -24,13 +35,13 @@ Algoritmo ConsumoEnergeticoCampus
     Definir i, j, k Como Entero
     Definir valor Como Real
     
-    // Parte 1: RecopilaciÛn de datos
+    // Parte 1: Recopilaci√≥n de datos
     Para i <- 0 Hasta 3 Hacer // 4 edificios (0-3)
         Escribir "******************************************"
         Escribir "--- Edificio ", i+1, " ---"
         
-        Para j <- 0 Hasta 6 Hacer // 7 dÌas (0-6)
-            Escribir "DÌa: ", dias_semana[j]
+        Para j <- 0 Hasta 6 Hacer // 7 d√≠as (0-6)
+            Escribir "D√≠a: ", dias_semana[j]
             
             Para k <- 0 Hasta 2 Hacer // 3 turnos (0-2)
                 Escribir "  Consumo en turno de ", turnos_dia[k], " (kWh): " Sin Bajar
@@ -44,7 +55,7 @@ Algoritmo ConsumoEnergeticoCampus
     
     // Parte 2: Procesamiento y resultados
     Escribir ""
-    Escribir "******* REGISTRO DEL C¡LCULO ******"
+    Escribir "******* REGISTRO DEL C√ÅLCULO ******"
     
     Para i <- 0 Hasta 3 Hacer
         Definir total Como Real
@@ -63,7 +74,7 @@ Algoritmo ConsumoEnergeticoCampus
         
         // Mostrar resultados
         Escribir "##########################################"
-        Escribir "********** C·lculo de consumo energÈtico **********"
+        Escribir "********** C√°lculo de consumo energ√©tico **********"
         Escribir "Edificio ", i+1, ":"
         Escribir " - Consumo total semanal: ", total, " kWh"
         Escribir " - Promedio diario: ", promedio, " kWh"

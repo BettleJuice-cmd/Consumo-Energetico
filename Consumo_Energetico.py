@@ -1,5 +1,5 @@
 """
-Nombre: Andy D.
+Nombre: Andy D. Joshua D. Sahid L.
 Fecha: 20/05/2025
 Version: 1.0
 Descripcion: Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 
@@ -7,7 +7,6 @@ universitario a lo largo de una semana. Por cada día se ingresarán los kilovat
 tres turnos: mañana, tarde y noche. El programa debe calcular el consumo total por edificio y 
 generar el promedio semanal correspondiente.
 """
-
 
 #Parte 1
 
@@ -39,16 +38,16 @@ for i in range(4): # Son 4 edificios
 # Parte 3
 # Procesar y mostrar los resultados 
 print("\n******* REGISTRO DEL CÁLCULO ******")
-for i in range(4):
+for i in range(4): #Bucle de los resultados calculados para cada edificio
     total = 0
     for j in range(7):
         total += sum(consumo_edificios[i][j])  #Sumamos el consumo de cada turno por dia
-    promedio = total / 7  #Calculamos el promedio semanal
-    # Mostrar resultados
+    promedio = total / 7  #Calculamos el promedio semanal, dividiendo el total entre los dias de la semana
+    # Mostrar resultados en una hoja de resultados
     print("#"*50)
     print("********** Calculo de consumo energetico **********")
     print(f"Edificio {i + 1}:")
-    print(f" - Consumo total semanal: {total:.2f} kWh")
+    print(f" - Consumo total semanal: {total:.2f} kWh") 
     print(f" - Promedio diario: {promedio:.2f} kWh\n")
     print("********** ***************************** **********")
     print("#"*50)

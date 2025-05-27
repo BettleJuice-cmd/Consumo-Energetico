@@ -1,7 +1,7 @@
 """
 Autores: Andy, D. Joshua, D. Sahid, L.
 Fecha: 20/05/2025
-Versión: 1.0
+Versión: 2.0
 Descripción: Programa que registra el consumo energético de 4 edificios del campus
 universitario durante una semana. Se ingresan los kWh en 3 turnos diarios,
 se calcula el consumo total por edificio y su promedio semanal.

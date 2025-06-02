@@ -1,0 +1,77 @@
+//Autor: Andy, D. Joshua, D. Sahir, L.
+//Fecha: 23/05/2025
+//Version: 1.0
+//Descripcion: Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 
+//universitario a lo largo de una semana. Por cada día se ingresarán los kilovatios consumidos en 
+//tres turnos: mañana, tarde y noche. El programa debe calcular el consumo total por edificio y 
+//generar el promedio semanal correspondiente.
+
+
+
+Algoritmo ConsumoEnergeticoCampus
+    // Definición de variables y estructuras
+    Dimension dias_semana[7]
+    dias_semana[1] <- "Lunes"
+    dias_semana[2] <- "Martes"
+    dias_semana[3] <- "Miércoles"
+    dias_semana[4] <- "Jueves"
+    dias_semana[5] <- "Viernes"
+    dias_semana[6] <- "Sábado"
+    dias_semana[7] <- "Domingo"
+    
+    Dimension turnos_dia[3]
+    turnos_dia[1] <- "Mañana"
+    turnos_dia[2] <- "Tarde"
+    turnos_dia[3] <- "Noche"
+    
+    Dimension consumo_edificios[4,7,3]
+    
+    Definir i, j, k Como Entero
+    Definir valor, total, promedio Como Real
+    
+    // Parte 1: Recopilación de datos
+    Para i <- 1 Hasta 4 Hacer
+        Escribir "******************************************"
+        Escribir "--- Edificio ", i, " ---"
+        
+        Para j <- 1 Hasta 7 Hacer
+            Escribir "Día: ", dias_semana[j]
+            
+            Para k <- 1 Hasta 3 Hacer
+                Escribir "  Consumo en turno de ", turnos_dia[k], " (kWh): " Sin Saltar
+                Leer valor
+                consumo_edificios[i,j,k] <- valor
+            FinPara
+        FinPara
+        
+        Escribir "******************************************"
+    FinPara
+    
+    // Parte 2: Procesamiento y resultados
+    Escribir ""
+    Escribir "******* REGISTRO DEL CÁLCULO ******"
+    
+    Para i <- 1 Hasta 4 Hacer
+        total <- 0
+        
+        Para j <- 1 Hasta 7 Hacer
+            Para k <- 1 Hasta 3 Hacer
+                total <- total + consumo_edificios[i,j,k]
+            FinPara
+        FinPara
+        
+        promedio <- total / 7
+        
+        Escribir "##########################################"
+        Escribir "********** Cálculo de consumo energético **********"
+        Escribir "Edificio ", i, ":"
+        Escribir " - Consumo total semanal: ", total, " kWh"
+        Escribir " - Promedio diario: ", promedio, " kWh"
+        Escribir ""
+        Escribir "******************************************"
+        Escribir "##########################################"
+    FinPara
+    
+    Escribir "Fin del programa"
+FinAlgoritmo
+

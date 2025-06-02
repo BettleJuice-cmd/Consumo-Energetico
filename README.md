@@ -1,6 +1,3 @@
-# Consumo-Energetico
-Este repositorio es para trabajar en el proyecto de los bucles anidados.
-Nuestro problema a solucionar es el problema #4 proporcionado por el docente, dentro de la guía didactica #8.
+# Bucles_Anidados
 
-Problema #4 -Monitoreo del consumo energetico-
-El programa recopilará los datos acerca del consumo energetico de 4 edificios del campus universitario. Al finalizar la recopilación, al usuario se le mostrará el consumo total por edificio y el promedio semanal.
+Este repositorio contiene diversos codigo, que se basan enteramente en el uso de arreglos, listas y la idea principal, el uso de bucles anidados.

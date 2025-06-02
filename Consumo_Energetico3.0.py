@@ -1,7 +1,7 @@
 """
 Autores: Andy, D. Joshua, D. Sahid, L.
 Fecha: 20/05/2025
-Version: 1.0
+Version: 3.0
 Descripcion: Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 
 universitario a lo largo de una semana. Por cada día se ingresarán los kilovatios consumidos en 
 tres turnos: mañana, tarde y noche. El programa debe calcular el consumo total por edificio y 

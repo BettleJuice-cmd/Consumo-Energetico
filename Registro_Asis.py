@@ -4,7 +4,7 @@ import os
 
 
 """
-Autor: Andy, D.
+Autor: Andy D, Joshua D, Sahid L.
 Fecha: 01/06/2025
 Version: 1.0
 Descripcion: Desarrolle un programa que registre la asistencia de estudiantes en tres secciones distintas de

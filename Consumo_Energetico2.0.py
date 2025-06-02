@@ -50,7 +50,7 @@ for i in range(4):  # Bucle de edificios
     total = 0.0
     for j in range(7):  # días
         for k in range(3):  # turnos
-            index = obtener_indice(i, j, k) #Index calcula la posicion exacta dentro del arreglo consumo_edificios
+            index = obtener_indice(i, j, k) #Index calcula la posicion exacta dentro del arreglo consumo_edificios  
             total += consumo_edificios[index]
     promedio = total / 7 #Formula para calcular el promedio diario
 

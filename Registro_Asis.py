@@ -19,10 +19,16 @@ secciones = ["Sección A", "Sección B", "Sección C"]
 
 asistencia = []
 
+# Se muestra un encabezado para el usuario
 print("**************************************************************")
 print("                    UNIVERSIDAD AMERICA                       ")
 print("**************************************************************")
 print("         Registro de Asistencia Semanal de Estudiantes        ") 
+
+
+
+# Se desarrollan los bucles para obtener los datos de asistencia
+# Por cada estudiante, para cada sección, y para cada día.
 
 for i in range(5): 
     print("Día:", dias_Semana[i])
@@ -38,8 +44,12 @@ for i in range(5):
                 seccion_Asistencia.append(False)
         dia_asistencia.append(seccion_Asistencia)
     asistencia.append(dia_asistencia)
+
+# Se limpia todo el alboroto
 os.system("cls")  
 
+
+# Se crean los contadores para cada sección, y un contador general
 totales_por_seccion = [0, 0, 0]
 total_general = 0
 
@@ -51,7 +61,7 @@ for dia in asistencia:
         total_general += asistencias_seccion
 
 
-
+# Se muestra nuevamente el encabezado, junto con los resultados
 print("**************************************************************")
 print("                    UNIVERSIDAD AMERICA                       ")
 print("**************************************************************")

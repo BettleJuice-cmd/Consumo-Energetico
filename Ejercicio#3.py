@@ -38,6 +38,7 @@ for dia in range(DIAS):
 
 total_general = 0
 for dia in range(DIAS):
+    print("-----------------------------------------")
     print(f"\n**** Resumen Día {dia + 1} ****")
     total_dia = 0
     for stand in range(STANDS_POR_DIA):
@@ -46,5 +47,5 @@ for dia in range(DIAS):
         total_dia += total_stand
     print(f"Total del Día {dia + 1}: ${total_dia:.2f}")
     total_general += total_dia
-
+print("-----------------------------------------")
 print(f"\n**** Total General de la Feria: ${total_general:.2f} ***")
